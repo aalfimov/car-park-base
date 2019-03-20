@@ -1,0 +1,52 @@
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0, 2em;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
