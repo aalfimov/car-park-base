@@ -1,0 +1,10 @@
+<h2>On the route</h2>
+<ul class="cars">
+    <li *ngFor="let car of getItems()">
+        <div>
+            <a routerLink="/detail/{{car.id}}">
+                <span class="badge">{{car.id}}</span> {{car.mark}}
+            </a>
+        </div>
+    </li>
+</ul>

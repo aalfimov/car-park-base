@@ -1,0 +1,27 @@
+<div *ngIf="car">
+
+    <h2>{{car.mark | uppercase}} Details</h2>
+    <div><span>id: </span>{{car.id}}</div>
+    <div>
+        <label>Mark:
+            <input [(ngModel)]="car.mark" placeholder="Mark"/>
+        </label>
+    </div>
+    <div>
+        <label>State: {{car.state | percent}}
+            <input [(ngModel)]="car.state" placeholder="State"/>
+        </label>
+    </div>
+    <div>
+        <label type="date">Year release: {{car.age | date}}
+            <input type='data' id='data' [(ngModel)]="car.age" placeholder="Age car"/>
+        </label>
+    </div>
+    <div>
+        <label>Car on route:
+            <input type="checkbox" [(ngModel)]="car.route">
+        </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+</div>
