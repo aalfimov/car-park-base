@@ -12,7 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './in-memory-data.service';
 import {CarSearchComponent} from './car-search/car-search.component';
-import {GarageComponent} from './garage/garage.component';
+
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 
 
@@ -36,7 +36,6 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
         MessagesComponent,
         DashboardComponent,
         CarSearchComponent,
-        GarageComponent,
         PageNotFoundComponentComponent
     ],
     bootstrap: [AppComponent]
