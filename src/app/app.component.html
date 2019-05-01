@@ -1,13 +1,20 @@
-<nav>
-    <div class="nav-wrapper">
-        <ul>
-            <!--<li><a href="#!" class="brand-logo center">{{title}} (Reset)</a></li>-->
-            <li><a routerLink="/cars">Cars</a></li>
-            <li><a (click)="callCarsOnTheRoute()" routerLink="/dashboard">On the route</a></li>
-            <li><a (click)="callCarsOnGarage()" routerLink="/dashboard">Garage</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/cars">Cars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="callCarsOnTheRoute()" routerLink="/dashboard">On the route</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="callCarsOnGarage()" routerLink="/dashboard">Garage</a>
+            </li>
         </ul>
     </div>
 </nav>
-<br>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

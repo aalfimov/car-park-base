@@ -1,0 +1,27 @@
+<div>
+    <h2>Cars List</h2>
+    <div class="col-lg-2">
+        <label>Car mark:
+            <input #carMark/>
+        </label>
+        <!-- (click) passes input value to add() and then clears the input -->
+        <button type="button" (click)="add(carMark.value); carMark.value=''">
+            add
+        </button>
+        <ul class="list-group">
+            <li *ngFor="let car of cars" class="list-group-item list-group-item-action">
+                <h4 class="d-flex justify-content-between align-items-center">
+                    <a routerLink="/detail/{{car.id}}">
+                        <span class="badge badge-dark">id: {{car.id}}</span> {{car.mark}}
+                    </a>
+                    <button type="button" class="btn btn-danger btn-sm" title="delete car" data-target="#confirm-delete"
+                            (click)="delete(car)">delete
+                    </button>
+                </h4>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+

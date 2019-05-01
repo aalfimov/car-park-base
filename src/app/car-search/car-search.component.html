@@ -1,0 +1,14 @@
+<h1>Route</h1>
+<div id="search-component">
+    <h4>Car Search</h4>
+    <label for="search-box">Search</label>
+    <input #searchBox type="text" id="search-box" (input)="(searchBox.value)"/>
+
+    <ul class="search-result">
+        <li *ngFor="let car of cars$ | async">
+            <a routerLink="/detail/{{car.id}}">Push all tags to remote repository:
+                {{car.mark}}
+            </a>
+        </li>
+    </ul>
+</div>

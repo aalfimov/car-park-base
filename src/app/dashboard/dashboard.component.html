@@ -1,0 +1,20 @@
+<div>
+    <div *ngIf="checkDashboard()">
+        <h1>Cars on the route</h1>
+    </div>
+    <div *ngIf="!checkDashboard()">
+        <h1>Cars in the garage</h1>
+    </div>
+    <div class="col-lg-2">
+        <ul class="cars">
+            <li class="list-group-item list-group-item-action" *ngFor="let car of findingCar()">
+                <h4 class="d-flex justify-content-between align-items-center">
+                    <a routerLink="/detail/{{car.id}}">
+                        <span class="badge badge-dark">id: {{car.id}}</span> {{car.mark}}
+                    </a>
+                </h4>
+            </li>
+        </ul>
+    </div>
+</div>
+

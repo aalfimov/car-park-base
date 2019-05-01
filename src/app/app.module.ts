@@ -14,6 +14,7 @@ import {InMemoryDataService} from './in-memory-data.service';
 import {CarSearchComponent} from './car-search/car-search.component';
 
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import {HomeComponent} from './home/home.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
         MessagesComponent,
         DashboardComponent,
         CarSearchComponent,
-        PageNotFoundComponentComponent
+        PageNotFoundComponentComponent,
+        HomeComponent
     ],
     bootstrap: [AppComponent]
 })

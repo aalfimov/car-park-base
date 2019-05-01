@@ -8,7 +8,7 @@ import {CarService} from './car.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'Fleet Manager';
+    title = 'Car Manager';
     constructor(private carService: CarService) {
     }
     callCarsOnTheRoute() {

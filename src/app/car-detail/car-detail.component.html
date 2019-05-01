@@ -1,0 +1,27 @@
+<div class="list-group-item col-lg-2 align-center" *ngIf="car">
+    <h2>{{car.mark | uppercase}} Details</h2>
+    <div><span>Car id: </span>{{car.id}}</div>
+    <div>
+        <label>Mark:
+            <input [(ngModel)]="car.mark" placeholder="Mark"/>
+        </label>
+    </div>
+    <div>
+        <label>State: {{car.state | percent:'0.0'}}
+            <input [(ngModel)]="car.state" placeholder="State"/>
+        </label>
+    </div>
+    <div>
+        <label>Year release: {{car.age | date}}
+            <input type='date' id='date' [(ngModel)]="car.age" placeholder="Age car"/>
+        </label>
+    </div>
+    <div>
+        <label>Car on route:
+            <input type="checkbox" [(ngModel)]="car.route">
+        </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+</div>
+
