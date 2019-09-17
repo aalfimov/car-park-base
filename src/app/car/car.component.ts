@@ -15,10 +15,10 @@ export class CarComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.getcars();
+        this.getCars();
     }
 
-    getcars(): void {
+    getCars(): void {
         this.carService.getCars()
             .subscribe(cars => this.cars = cars);
     }

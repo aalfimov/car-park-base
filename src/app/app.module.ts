@@ -13,7 +13,7 @@ import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './in-memory-data.service';
 import {CarSearchComponent} from './car-search/car-search.component';
 
-import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { PageNotFoundComponent } from './page-not-found-component/page-not-found.component';
 import {HomeComponent} from './home/home.component';
 
 
@@ -23,9 +23,6 @@ import {HomeComponent} from './home/home.component';
         AppRoutingModule,
         FormsModule,
         HttpClientModule,
-        // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-        // and returns simulated server responses.
-        // Remove it when a real server is ready to receive requests.
         HttpClientInMemoryWebApiModule.forRoot(
             InMemoryDataService, {dataEncapsulation: false}
         )
@@ -37,7 +34,7 @@ import {HomeComponent} from './home/home.component';
         MessagesComponent,
         DashboardComponent,
         CarSearchComponent,
-        PageNotFoundComponentComponent,
+        PageNotFoundComponent,
         HomeComponent
     ],
     bootstrap: [AppComponent]

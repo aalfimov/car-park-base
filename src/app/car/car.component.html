@@ -4,7 +4,6 @@
         <label>Car mark:
             <input #carMark/>
         </label>
-        <!-- (click) passes input value to add() and then clears the input -->
         <button type="button" (click)="add(carMark.value); carMark.value=''">
             add
         </button>

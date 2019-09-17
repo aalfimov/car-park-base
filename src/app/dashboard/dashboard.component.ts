@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Car} from '../car';
 import {CarService} from '../car.service';
 
@@ -10,6 +10,7 @@ import {CarService} from '../car.service';
 })
 export class DashboardComponent implements OnInit {
     cars: Car[] = [];
+    @Input() dashboardParams: boolean;
 
     constructor(private carService: CarService) {
     }

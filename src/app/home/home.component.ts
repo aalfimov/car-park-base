@@ -1,8 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 
-/*import {CarService} from '../car.service';
-import {CarService} from '../car.service';*/
-
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
